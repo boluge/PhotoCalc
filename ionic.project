@@ -1,6 +1,6 @@
 {
   "name": "PhotoCalc",
-  "app_id": "",
+  "app_id": "c202d5b4",
   "gulpStartupTasks": [
     "sass",
     "watch"
