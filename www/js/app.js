@@ -17,3 +17,30 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+
+.controller('HomeCtrl', function(){
+
+})
+
+.controller('ResultsCtrl', function(){
+
+})
+
+// Routes
+.config(function($stateProvider, $urlRouterProvider) {
+
+  $stateProvider.state('home', {
+    url: '/home',
+    templateUrl: 'views/home.html',
+    controller: 'HomeCtrl'
+  })
+
+  $stateProvider.state('results', {
+    url: '/results',
+    templateUrl: 'views/results.html',
+    controller: 'ResultsCtrl'
+  })
+
+  $urlRouterProvider.otherwise('/home')
+
+});
