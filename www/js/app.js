@@ -18,11 +18,11 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.controller('HomeCtrl', function(){
+.controller('HomeCtrl', function($scope){
 
 })
 
-.controller('ResultsCtrl', function(){
+.controller('ResultsCtrl', function($scope){
 
 })
 
