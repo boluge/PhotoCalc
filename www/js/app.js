@@ -18,7 +18,7 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.controller('HomeCtrl', function($scope, $http){
+.controller('HomeCtrl', function($scope, $http, $ionicPopup){
     // Confusions
     $http.get('json/confusions.json').success(function(confusion, status, headers, config) {
       $scope.appareils = confusion;
@@ -42,7 +42,13 @@ angular.module('starter', ['ionic'])
 
     $scope.calcul = function(modele, focal, ouverture, distance){
       if(!distance || !focal || !ouverture || !distance){
-        alert('Manque des infos !!');
+        var alertPopup = $ionicPopup.alert({
+          title: 'Ca chie !!',
+          template: 'il manque des infos pour faire le calcul !'
+        });
+        /*alertPopup.then(function(res) {
+          console.log('Thank you for not eating my delicious ice cream cone');
+        });*/
       } else {
         alert('Tous est Ok !');
       }
