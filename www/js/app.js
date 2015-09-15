@@ -40,6 +40,14 @@ angular.module('starter', ['ionic'])
       // log error
     });
 
+    $scope.calcul = function(modele, focal, ouverture, distance){
+      if(!distance || !focal || !ouverture || !distance){
+        alert('Manque des infos !!');
+      } else {
+        alert('Tous est Ok !');
+      }
+    }
+
 })
 
 .controller('ResultsCtrl', function($scope){
