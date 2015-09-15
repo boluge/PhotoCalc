@@ -19,12 +19,27 @@ angular.module('starter', ['ionic'])
 })
 
 .controller('HomeCtrl', function($scope, $http){
-    $http.get('json/confusions.json').success(function(data, status, headers, config) {
-      $scope.appareils = data;
-    }).error(function(data, status, headers, config) {
+    // Confusions
+    $http.get('json/confusions.json').success(function(confusion, status, headers, config) {
+      $scope.appareils = confusion;
+    }).error(function(confusion, status, headers, config) {
       // log error
     });
-    console.log($scope.appareils);
+
+    // Focals
+    $http.get('json/focals.json').success(function(focal, status, headers, config) {
+      $scope.focals = focal;
+    }).error(function(focal, status, headers, config) {
+      // log error
+    });
+
+    // Ouvertures
+    $http.get('json/ouvertures.json').success(function(open, status, headers, config) {
+      $scope.ouvertures = open;
+    }).error(function(open, status, headers, config) {
+      // log error
+    });
+
 })
 
 .controller('ResultsCtrl', function($scope){

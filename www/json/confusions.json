@@ -13,7 +13,7 @@
     "marque":"AgfaPhoto",
     "model":[
         {
-            "name":"ePhoto CL-18",
+            "name":"DC-600uw",
             "confusion":0.005
         }
     ]
@@ -27,28 +27,24 @@
             "confusion":0.023
         },
         {
-            "name":"1D Mark II",
-            "confusion":0.023
-        },
-        {
-            "name":"1D Mark II N",
-            "confusion":0.023
-        },
-        {
-            "name":"1D Mark III",
-            "confusion":0.023
-        },
-        {
-            "name":"1D Mark IV",
-            "confusion":0.023
-        },
-        {
             "name":"1D X",
             "confusion":0.03
         },
         {
             "name":"1D C",
             "confusion":0.03
+        },
+        {
+            "name":"1DS",
+            "confusion":0.03
+        },
+        {
+            "name":"5D",
+            "confusion":0.03
+        },
+        {
+            "name":"7D",
+            "confusion":0.019
         }
     ]
   }

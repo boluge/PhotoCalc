@@ -1,22 +1,22 @@
 [
     {
-        "focal":"8mm",
+        "name":"8mm",
         "value":8
     },
     {
-        "focal":"10mm",
+        "name":"10mm",
         "value":10
     },
     {
-        "focal":"12mm",
+        "name":"12mm",
         "value":12
     },
     {
-        "focal":"18mm",
+        "name":"18mm",
         "value":18
     },
     {
-        "focal":"25mm",
+        "name":"25mm",
         "value":25
-    },
+    }
 ]
