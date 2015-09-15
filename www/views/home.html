@@ -1,14 +1,11 @@
-<ion-view view-title="PhotoCalc">
+<ion-view view-title="PhotoCalc" ng-controller="HomeCtrl">
   <ion-content class="padding">
     <div class="list card">
         <label class="item item-input item-select">
             <div class="input-label">
             Marque
             </div>
-            <select>
-                <option selected>Canon</option>
-                <option>Nikon</option>
-                <option>Sony</option>
+            <select ng-options="marque as marque.marque for marque in marques" ng-model="marque">
             </select>
         </label>
 

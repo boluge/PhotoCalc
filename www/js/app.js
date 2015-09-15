@@ -18,8 +18,13 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.controller('HomeCtrl', function($scope){
-
+.controller('HomeCtrl', function($scope, $http){
+    $http.get('json/marques.json').success(function(data, status, headers, config) {
+      $scope.marques = data;
+    }).error(function(data, status, headers, config) {
+      // log error
+    });
+    console.log($scope.marques);
 })
 
 .controller('ResultsCtrl', function($scope){
