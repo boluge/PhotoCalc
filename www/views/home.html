@@ -2,7 +2,7 @@
   <ion-content class="padding">
     <div class="list card">
         <label class="item item-input item-select">
-            <i class="icon ion-mic-a"></i>
+            <i class="icon pc-marque"></i>
             <div class="input-label">
             Marque
             </div>
@@ -11,7 +11,7 @@
         </label>
 
         <label class="item item-input item-select">
-            <i class="icon ion-mic-a"></i>
+            <i class="icon pc-model"></i>
             <div class="input-label">
             Mod&#xE8;le
             </div>
@@ -21,7 +21,7 @@
     </div>
     <div class="list card">
         <label class="item item-input item-select">
-            <i class="icon ion-mic-a"></i>
+            <i class="icon pc-focal"></i>
             <div class="input-label">
             Focal
             </div>
@@ -29,7 +29,7 @@
             </select>
         </label>
         <label class="item item-input item-select">
-            <i class="icon ion-mic-a"></i>
+            <i class="icon pc-ouverture"></i>
             <div class="input-label">
             Ouverture
             </div>
@@ -40,18 +40,24 @@
 
     <div class="list card">
         <label class="item item-input">
-            <i class="icon ion-search placeholder-icon"></i>
+            <i class="icon pc-distance placeholder-icon"></i>
             <input type="text" ng-model="distance" placeholder="Distance du sujet en m&#xE8;tre">
         </label>
     </div>
 
-    <p>{{ modele.confusion }}</p>
-    <p>{{ focal.value }}</p>
-    <p>{{ ouverture.value }}</p>
-    <p>{{ distance }}</p>
 
     <button ui-sref="results" class="button button-full button-positive">
       Calculer
     </button>
+
+    <div class="card padding">
+        <p>Faire une fonction qui vérifie les valeurs et qui fais les calculs puis envoie sur la page de résultats.</p>
+        <p>Si il manque des valeurs erreur explicative.</p>
+        <p>{{ modele.confusion }}</p>
+        <p>{{ focal.value }}</p>
+        <p>{{ ouverture.value }}</p>
+        <p>{{ distance }}</p>
+    </div>
+
   </ion-content>
 </ion-view>
