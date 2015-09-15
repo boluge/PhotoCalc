@@ -1,0 +1,22 @@
+[
+    {
+        "ouverture":"f 1",
+        "value":1
+    },
+    {
+        "ouverture":"f 1.4",
+        "value":1.4
+    },
+    {
+        "ouverture":"f 1.8",
+        "value":1.8
+    },
+    {
+        "ouverture":"f 2",
+        "value":2
+    },
+    {
+        "ouverture":"f 2.8",
+        "value":2.8
+    }
+]

@@ -8,15 +8,15 @@
         "value":10
     },
     {
-        "focal":"8mm",
-        "value":8
+        "focal":"12mm",
+        "value":12
     },
     {
-        "focal":"8mm",
-        "value":8
+        "focal":"18mm",
+        "value":18
     },
     {
-        "focal":"8mm",
-        "value":8
+        "focal":"25mm",
+        "value":25
     },
 ]
