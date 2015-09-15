@@ -5,7 +5,7 @@
             <div class="input-label">
             Marque
             </div>
-            <select ng-options="marque as marque.marque for marque in marques" ng-model="marque">
+            <select ng-options="marque.marque for marque in appareils" ng-model="marque">
             </select>
         </label>
 
@@ -13,13 +13,12 @@
             <div class="input-label">
             Mod&#xE8;le
             </div>
-            <select>
-                <option selected>40D</option>
-                <option>7D</option>
-                <option>5D</option>
+            <select ng-options="modele.name for modele in marque.model" ng-model="modele">
             </select>
         </label>
     </div>
+
+    {{ modele.confusion }}
 
     <div class="list card">
         <label class="item item-input item-select">
