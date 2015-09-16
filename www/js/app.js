@@ -18,7 +18,7 @@ angular.module('starter', ['ionic'])
   });
 })
 
-.controller('HomeCtrl', function($scope, $http, $ionicPopup){
+.controller('HomeCtrl', function($scope, $http, $ionicPopup, $rootScope, $state){
     // Confusions
     $http.get('json/confusions.json').success(function(confusion, status, headers, config) {
       $scope.appareils = confusion;
@@ -51,13 +51,29 @@ angular.module('starter', ['ionic'])
           okType: 'button-assertive',
         });
       } else {
-        alert('Tous est Ok !');
+
+        $rootScope.confusion = modele;
+        $rootScope.focal = focal;
+        $rootScope.ouverture = ouverture;
+        $rootScope.distance = distance;
+
+        $state.go('results');
       }
     }
 
 })
 
-.controller('ResultsCtrl', function($scope){
+.controller('ResultsCtrl', function($scope, $rootScope){
+
+  $scope.confusion = $rootScope.confusion;
+  $scope.focal = $rootScope.focal;
+  $scope.ouverture = $rootScope.ouverture;
+  $scope.distance = $rootScope.distance;
+
+  $scope.hyperfocal = Math.round(100*(($scope.focal*$scope.focal)/(1000*$scope.confusion*$scope.ouverture)))/100;
+  $scope.premier = ($scope.hyperfocal*parseFloat($scope.distance))/($scope.hyperfocal+parseFloat($scope.distance));
+  $scope.dernier = ($scope.hyperfocal*parseFloat($scope.distance))/($scope.hyperfocal-parseFloat($scope.distance));
+  $scope.pdc = $scope.dernier-$scope.premier;
 
 })
 

@@ -1,12 +1,27 @@
 <ion-view view-title="Résultats">
   <ion-content class="padding">
-    <h1>Résultats</h1>
-    <div class="card padding">
-        <p>Faire une fonction qui vérifie les valeurs et qui fais les calculs puis envoie sur la page de résultats.</p>
-        <p>Si il manque des valeurs erreur explicative.</p>
+    <div class="card">
+		<div class="item item-divider">
+			Réglages
+		</div>
+		<div class="item item-text-wrap">
+    		<p>Cercle de confusion {{ confusion }}</p>
+    		<p>Focale {{ focal }}</p>
+    		<p>Ouverture {{ ouverture }}</p>
+    		<p>Distance {{ distance }}</p>
+    	</div>
     </div>
-    <p>{{ modele.confusion }}</p>
-    <p>{{ focal.value }}</p>
-    <p>{{ ouverture.value }}</p>
+    <div class="card">
+    	<div class="item item-divider">
+			Résultats
+		</div>
+		<div class="item item-text-wrap">
+	        <p>Distance <strong>hyperfocale</strong> à cette ouverture : <strong>{{ hyperfocal }}</strong></p>
+	        <p>Limite de netteté la plus proche : <strong>{{ premier }}m</strong></p>
+	        <p>Limite de netteté la plus lointaine : <strong>{{ dernier }}</strong></p>
+	        <p>Profondeur de champ totale : <strong>{{ pdc }}</strong></p>
+	        
+        </div>
+    </div>
   </ion-content>
 </ion-view>
