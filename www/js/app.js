@@ -44,11 +44,12 @@ angular.module('starter', ['ionic'])
       if(!distance || !focal || !ouverture || !distance){
         var alertPopup = $ionicPopup.alert({
           title: 'Ca chie !!',
-          template: 'il manque des infos pour faire le calcul !'
+          subTitle: 'Il manque des infos pour faire le calcul !',
+          cssClass: 'error',
+          template: '',
+          okText: 'Corriger',
+          okType: 'button-assertive',
         });
-        /*alertPopup.then(function(res) {
-          console.log('Thank you for not eating my delicious ice cream cone');
-        });*/
       } else {
         alert('Tous est Ok !');
       }
