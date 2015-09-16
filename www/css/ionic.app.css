@@ -7702,3 +7702,38 @@ a.button {
 
 body {
   background: #eee; }
+
+/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: 'pcico';
+  src: url('../fonts/photocalc.eot?-665nvi');
+  src: url('../fonts/photocalc.eot?#iefix-665nvi') format('embedded-opentype'), url('../fonts/photocalc.ttf?-665nvi') format('truetype'), url('../fonts/photocalc.woff?-665nvi') format('woff'), url('../fonts/photocalc.svg?-665nvi#photocalc') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+.pc-ico {
+  font-family: 'pcico';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 10px; }
+
+.pc-marque:before {
+  content: "\e602"; }
+
+.pc-model:before {
+  content: "\e600"; }
+
+.pc-focal:before {
+  content: "\e603"; }
+
+.pc-ouverture:before {
+  content: "\e604"; }
+
+.pc-distance:before {
+  content: "\e601"; }
