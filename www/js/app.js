@@ -68,12 +68,17 @@ angular.module('starter', ['ionic'])
   $scope.confusion = $rootScope.confusion;
   $scope.focal = $rootScope.focal;
   $scope.ouverture = $rootScope.ouverture;
-  $scope.distance = $rootScope.distance;
+  $scope.distance = $rootScope.distance/100;
 
   $scope.hyperfocal = Math.round(100*(($scope.focal*$scope.focal)/(1000*$scope.confusion*$scope.ouverture)))/100;
-  $scope.premier = ($scope.hyperfocal*parseFloat($scope.distance))/($scope.hyperfocal+parseFloat($scope.distance));
-  $scope.dernier = ($scope.hyperfocal*parseFloat($scope.distance))/($scope.hyperfocal-parseFloat($scope.distance));
-  $scope.pdc = $scope.dernier-$scope.premier;
+
+  $scope.premier = (($scope.hyperfocal*parseFloat($scope.distance))/($scope.hyperfocal+parseFloat($scope.distance)))*100;
+  $scope.dernier = (($scope.hyperfocal*parseFloat($scope.distance))/($scope.hyperfocal-parseFloat($scope.distance)))*100;
+
+  $scope.pdc = Math.round(100*($scope.dernier-$scope.premier))/100;
+  $scope.premier = Math.round(100*$scope.premier)/100;
+  $scope.dernier = Math.round(100*$scope.dernier)/100;
+
 
 })
 
