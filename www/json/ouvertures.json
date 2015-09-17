@@ -1,22 +1,50 @@
 [
     {
-        "ouverture":"f 1",
+        "ouverture":"f/1",
         "value":1
     },
     {
-        "ouverture":"f 1.4",
+        "ouverture":"f/1.4",
         "value":1.4
     },
     {
-        "ouverture":"f 1.8",
+        "ouverture":"f/1.8",
         "value":1.8
     },
     {
-        "ouverture":"f 2",
+        "ouverture":"f/2",
         "value":2
     },
     {
-        "ouverture":"f 2.8",
+        "ouverture":"f/2.8",
         "value":2.8
+    },
+    {
+        "ouverture":"f/4",
+        "value":4
+    },
+    {
+        "ouverture":"f/5.6",
+        "value":5.6
+    },
+    {
+        "ouverture":"f/8",
+        "value":8
+    },
+    {
+        "ouverture":"f/11",
+        "value":11
+    },
+    {
+        "ouverture":"f/16",
+        "value":16
+    },
+    {
+        "ouverture":"f/22",
+        "value":22
+    },
+    {
+        "ouverture":"f/32",
+        "value":32
     }
 ]

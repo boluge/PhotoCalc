@@ -8,15 +8,39 @@
         "value":10
     },
     {
-        "name":"12mm",
-        "value":12
+        "name":"17mm",
+        "value":17
     },
     {
-        "name":"18mm",
-        "value":18
+        "name":"20mm",
+        "value":20
     },
     {
-        "name":"25mm",
-        "value":25
+        "name":"24mm",
+        "value":24
+    },
+    {
+        "name":"28mm",
+        "value":28
+    },
+    {
+        "name":"35mm",
+        "value":35
+    },
+    {
+        "name":"50mm",
+        "value":50
+    },
+    {
+        "name":"70mm",
+        "value":70
+    },
+    {
+        "name":"80mm",
+        "value":80
+    },
+    {
+        "name":"100mm",
+        "value":100
     }
 ]
