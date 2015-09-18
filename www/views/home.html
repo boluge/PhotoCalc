@@ -1,7 +1,19 @@
 <ion-view view-title="PhotoCalc" >
   <ion-content class="padding">
+      <div class="card">
+          <div class="item item-divider">
+              Blabla explicatif
+          </div>
+          <div class="item item-text-wrap">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis dolores neque maxime laborum laboriosam accusantium fugiat sequi quibusdam modi officiis. Unde sed, totam ab commodi et voluptatum placeat omnis quidem.
+          </div>
+      </div>
       <form ng-submit="calcul(modele.confusion, focal.value, ouverture.value, distance)" ng-controller="HomeCtrl">
         <div class="list card">
+            <div class="item item-divider">
+    			Appareil photo
+    		</div>
+
             <label class="item item-input item-select">
                 <i class="pc-ico pc-marque"></i>
                 <div class="input-label">
@@ -10,7 +22,6 @@
                 <select ng-options="marque.marque for marque in appareils" ng-model="marque">
                 </select>
             </label>
-
             <label class="item item-input item-select">
                 <i class="pc-ico pc-model"></i>
                 <div class="input-label">
@@ -21,6 +32,9 @@
             </label>
         </div>
         <div class="list card">
+            <div class="item item-divider">
+    			Objectif
+    		</div>
             <label class="item item-input item-select">
                 <i class="pc-ico pc-focal"></i>
                 <div class="input-label">
@@ -40,6 +54,9 @@
         </div>
 
         <div class="list card">
+            <div class="item item-divider">
+    			Distance du sujet en cm
+    		</div>
             <label class="item item-input">
                 <i class="pc-ico pc-distance placeholder-icon"></i>
                 <input type="number" ng-model="distance" placeholder="Distance du sujet en centim&#xE8;tres">
@@ -52,7 +69,7 @@
         </button>
     </form>
 
-    <a ui-sref="results"  class="button button-full button-energized">Page résultats</a>
+    <!--<a ui-sref="results" >Page résultats</a>-->
 
   </ion-content>
 </ion-view>
