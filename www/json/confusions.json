@@ -27,24 +27,72 @@
             "confusion":0.023
         },
         {
-            "name":"1D X",
-            "confusion":0.03
-        },
-        {
-            "name":"1D C",
-            "confusion":0.03
-        },
-        {
             "name":"1DS",
-            "confusion":0.03
+            "confusion":0.029
         },
         {
             "name":"5D",
-            "confusion":0.03
+            "confusion":0.029
+        },
+        {
+            "name":"6D",
+            "confusion":0.029
         },
         {
             "name":"7D",
             "confusion":0.019
+        },
+        {
+            "name":"40D",
+            "confusion":0.019
+        },
+        {
+            "name":"50D",
+            "confusion":0.019
+        },
+        {
+            "name":"60D",
+            "confusion":0.019
+        },
+        {
+            "name":"70D",
+            "confusion":0.019
+        },
+        {
+            "name":"600D",
+            "confusion":0.019
+        },
+        {
+            "name":"650D",
+            "confusion":0.019
+        },
+        {
+            "name":"1000D",
+            "confusion":0.019
+        },
+        {
+            "name":"1100D",
+            "confusion":0.019
+        },
+        {
+            "name":"PowerShot G12",
+            "confusion":0.007
+        },
+        {
+            "name":"PowerShot G13",
+            "confusion":0.007
+        },
+        {
+            "name":"PowerShot G14",
+            "confusion":0.007
+        },
+        {
+            "name":"PowerShot G15",
+            "confusion":0.007
+        },
+        {
+            "name":"PowerShot G16",
+            "confusion":0.007
         }
     ]
   }
